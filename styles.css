@@ -28,3 +28,7 @@ label {
 legend {
     color : #FFFFFF;
 }
+
+img#fer {
+    vertical-align: top;
+}
