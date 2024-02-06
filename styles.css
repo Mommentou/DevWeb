@@ -17,3 +17,7 @@ p.prime_paragraphe{
 a {
     color : #FFFFFF;
 }
+
+img#rang_valo {
+    object-position: bottom;
+}
