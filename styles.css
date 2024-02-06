@@ -3,11 +3,11 @@ h1{
     color : #FFFF00;
 }
 body {
-    background-color: #077A84;
+    background-color: #000033;
 }
 
 p#header{
-    color : #66CCFF;
+    color : #FFFFFF;
 }
 
 p.prime_paragraphe{
@@ -18,3 +18,13 @@ a {
     color : #FFFFFF;
 }
 
+form {
+    color : #FFFFFF;
+}
+label {
+    color : #FFFFFF;
+}
+
+legend {
+    color : #FFFFFF;
+}
