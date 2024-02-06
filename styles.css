@@ -1,12 +1,17 @@
 h1{
     text-align: center;
+    color : #FFFF00;
 }
 body {
     background-color: #990000;
 }
 
-p {
-    color : #FFFFFF;
+p#header{
+    color : #66CCFF;
+}
+
+p.prime_paragraphe{
+    color : #99FF99
 }
 
 a {
