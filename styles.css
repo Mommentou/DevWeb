@@ -24,6 +24,7 @@ a:hover{
     color : #ed1515;
     border-style: dotted;
     background-color : palegreen;
+    position: relative left 60px;
 }
 
 form {
@@ -39,9 +40,15 @@ legend {
 
 img#fer {
     vertical-align: top;
+    position:  relative left 30px;
 }
 
 p{
     font-family: 'Franklin Gothic Medium';
     color : #99ffd6;
+    position: relative;
+}
+
+div#conteneur_flex {
+    display: flex;
 }
