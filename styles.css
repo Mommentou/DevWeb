@@ -8,10 +8,12 @@ body {
 
 p#main_paragraphe{
     color : #FFFFFF;
+    margin-left : 100px;
 }
 
 p.prime_paragraphe{
     color : #FFFFFF;
+    margin-left : 60px;
 }
 
 a {
