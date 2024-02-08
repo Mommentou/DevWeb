@@ -1,14 +1,28 @@
-var button = document.getElementById('theme_btn');
+localStorage.getItem("theme");
+localStorage.setItem("theme", newTheme);
 
-var body = document.getElementsByTagName('body')[0];
-
-var light_theme = 'light';
-
-button.addEventListener('click', function() {
-    if (body.classList.contains(light_theme)) {
-        body.classlist.remove(light_theme);
+function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+    if (localStorageTheme !== null) {
+      return localStorageTheme;
     }
-    else {
-        body.classList.add(light_theme);
+  
+    if (systemSettingDark.matches) {
+      return "dark";
     }
-} );
+  
+    return "light";
+  }
+  
+  const localStorageTheme = localStorage.getItem("theme");
+  const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+  
+  let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+  const button = document.querySelector("[data-theme-toggle]");
+  button.addEventListener("click", () => {
+    const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+    const newCTA = newTheme === "dark" ? "change to light theme" : "change to dark theme";
+    button.innertext = newCTA;
+    button.setAttribute("aria-label", newCTA);
+    document.querySelector("html").setAttribute("data-theme",newTheme);
+  });

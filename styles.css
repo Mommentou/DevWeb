@@ -5,9 +5,7 @@ h1{
     font-family: 'Lucida Grande';
     margin-bottom: 75px;
 }
-body {
-    background-color: #000033;
-}
+
 
 p#main_paragraphe{
    
@@ -59,7 +57,21 @@ div#conteneur_flex {
     container: { flex-direction: column;}
 }
 
-.light {
+[data-theme="light"] {
     background-color: #FFFFFF;
     color: black;
+}
+
+[data-theme="dark"] {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+:root {
+    --grid-unit: 1rem;
+    --border-radius-base: 0,5rem;
+}
+
+button {
+    cursor: pointer;
 }
