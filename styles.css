@@ -40,7 +40,9 @@ legend {
 
 img#fer {
     vertical-align: top;
-    position:  relative left 30px;
+    align-items: flex-start;
+    padding: 60px;
+    
 }
 
 p{
@@ -55,4 +57,9 @@ div#conteneur_flex {
 
 @media only screen and (max-width: 1279px) {
     container: { flex-direction: column;}
+}
+
+.light {
+    background-color: #FFFFFF;
+    color: black;
 }
